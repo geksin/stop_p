@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 function Header (props) {
     return (
-        <header className="header">
+        <header className="header width__all">
           <a href="##" target="_self"><img className="header__logo" src={headerLogoPath} alt="Логотип Stop smoke" /></a>
           <nav className="header__menu" style={(props.loggedIn ? ({display:'block'}) : ({display:'none'}) )}>
             <NavLink exact to="/" activeClassName="header__menu_link-active" className="header__menu_link">Лента игры</NavLink>

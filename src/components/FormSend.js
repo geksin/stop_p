@@ -15,7 +15,7 @@ function FormSend (props) {
     
 
     return (
-        <main className="content">
+        <main className="width__all content">
             <div className="message__avatar"><img className="message__avatar-img" src="https://avatarfiles.alphacoders.com/860/86058.png" title="avatar"></img></div>
             <form onSubmit={handleSubmit} className="content__form-message">
             <textarea type="text" className="content__form-input" placeholder="Расскажите как прошла неделя" minLength={2} onChange={handleChangeName} />

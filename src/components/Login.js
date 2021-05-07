@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Route, Link, withRouter } from 'react-router-dom';
 
 
 
@@ -32,8 +32,10 @@ function Login(props) {
          <input id="email" name="email" type="text" className="login__input" placeholder="Email" minLength={2} maxLength={40} required value={userData.email} onChange={handleChange} />
           <input className="login__input" required id="password" name="password" type="password" placeholder="Пароль" value={userData.password} onChange={handleChange} />
           <div className="login__button-container">
-            <button type="submit" onSubmit={handleSubmit} className="login__button">Войти</button>
+            <button type="submit" onSubmit={handleSubmit} className="content__message-button">Войти</button>           
+            <Link to="/register" className="signup__link">Еще нет аккаунта?</Link> 
           </div>
+
         </form>
       </div>
     )

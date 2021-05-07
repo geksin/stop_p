@@ -99,7 +99,7 @@ function App() {
         <Switch>
           <ProtectedRoute exact path="/" component={Main} loggedIn={loggedIn} />
           <ProtectedRoute  path="/games" component={AllGames} loggedIn={loggedIn} />
-          <ProtectedRoute  path="/user" component={UserProfile} loggedIn={loggedIn} singOut={handleSignOut} email={email}/>
+          <ProtectedRoute  path="/user" component={UserProfile} loggedIn={loggedIn} singOut={handleSignOut} email={email} currentUser={currentUser} />
           <Route path="/login">
             <Login onLogin={authLogin} />
           </Route>

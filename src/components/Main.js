@@ -16,7 +16,7 @@ function Main () {
     return (
         <>
             <BoardGame currentGame={false} />
-            <div className="message-list">
+            <div className="message-list width__all">
                 {initialChat.map((item) => <Message key={item.id} item={item} />)}
             </div>
             <FormSend sendMessage={createMessage} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, Route, withRouter } from 'react-router-dom';
 
 
 function Register (props) {
@@ -30,8 +30,8 @@ function Register (props) {
             <input id="email" name="email" type="text" className="login__input" placeholder="Email" minLength={2} maxLength={40} required value={userData.email} onChange={handleChange} />
             <input className="login__input" required id="password" name="password" type="password" placeholder="Пароль" value={userData.password} onChange={handleChange} />
             <div className="login__button-container">
-              <button type="submit" className="login__button">Зарегистрироваться</button>
-              <Link className="signup__link" href="/login">Уже зарегистрированы? Войти</Link>
+              <button type="submit" className="content__message-button">Зарегистрироваться</button>
+              <Link className="signup__link" to="/login">Уже зарегистрированы?</Link>
             </div>
           </form>
         </div>

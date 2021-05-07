@@ -32,7 +32,7 @@ function AllGames () {
   }
 
     return (
-        <section className="board">
+        <section className="board width__all">
           <div className="board__rools">
             <p className="board__text">Текущая игра: продержаться до 12 мая</p>
             <p className="board__text">Условия: не курить</p>

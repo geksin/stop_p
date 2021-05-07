@@ -19,7 +19,7 @@ code {
   justify-content: space-between;
 }
 
-.header, .message-list, .content, .board {
+.width__all {
   width: 1024px;
   margin: 0 auto;
 }
@@ -135,9 +135,8 @@ input[type="radio" i] {
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
-  width: 105px;
-  height: 34px;
   border: none;
+  padding: 8px 12px;
 }
 
 .content__message-button:hover {
@@ -195,3 +194,52 @@ input[type="radio" i] {
   line-height: 24px;
 }
 
+.login {
+  width: 400px;
+  margin: auto;
+}
+
+.login__input {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 300px;
+  padding:8px;
+  margin-bottom: 20px;
+}
+
+.signup__link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #828282;
+  cursor: pointer;
+  transition-duration: 200;
+  text-decoration: none;
+  padding-left: 24px;
+}
+
+.signup__link:hover {
+  opacity: 0.5;
+}
+
+.user__profile {
+  display: flex;
+  margin-top: 40px;
+}
+
+.user__profile-avatar-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.user__profile-text {
+  padding-left: 24px;
+  font-size: 18px;
+  line-height: 28px;
+  
+}
