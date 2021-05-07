@@ -7,7 +7,7 @@ import Message from './Message.js';
 function Main () {
 
 
-  // тут событие отправки сообщения
+  // тут будет событие отправки сообщения
   const [mes, setMes] = React.useState('');
   function createMessage(message) {
     setMes(message); 
